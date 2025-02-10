@@ -6,7 +6,7 @@ def cabeçalho(txt):
     print(linha())
 
 def linha():
-    return '━' * 42
+    return '━' * 43
 
 def leiaInt(msg):
     while True:
@@ -24,7 +24,7 @@ def menu(lista):
         time.sleep(0.5)
         c += 1
     print(linha())
-    opc = leiaInt('\U0001F4BB  Escolha uma opção e pressione ENTER:')
+    opc = leiaInt('\U0001F4BB  Escolha uma opção e pressione ENTER: ')
     return opc
     
 

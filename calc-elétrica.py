@@ -1,10 +1,11 @@
 from lib.interface import *
+from lib.arquivo import *
 
 while True:
 
     resp = menu(['\U0001F4CF  Resistência (R)', '\U0001F50B  Tensão      (V)', '\U0001F50C  Corrente    (I)', '\U0001F4A5  Potência    (P)', '\U0001F6E0   Dimensionamento', '\U0000274C  Sair do programa'])
     if resp == 1:
-        print()
+        escResis()
     if resp == 2:
         print()
 
@@ -25,3 +26,6 @@ while True:
         print()
         print('\033[1;31mERRO! Digite um opção válida.\033[m')   
         print() 
+
+
+
