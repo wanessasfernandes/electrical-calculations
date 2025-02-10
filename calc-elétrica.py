@@ -7,7 +7,7 @@ while True:
     if resp == 1:
         escResis()
     if resp == 2:
-        print()
+        escTen()
 
     if resp == 3:
         print()
@@ -22,10 +22,11 @@ while True:
         break
         
 
-    else:
-        print()
-        print('\033[1;31mERRO! Digite um opção válida.\033[m')   
-        print() 
 
 
+'''u = i*r
+p = i*u
+
+-> calculo de resistencias 
+'''
 

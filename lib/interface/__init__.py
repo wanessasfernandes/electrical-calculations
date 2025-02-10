@@ -24,7 +24,9 @@ def menu(lista):
         time.sleep(0.5)
         c += 1
     print(linha())
+    print()
     opc = leiaInt('\U0001F4BB  Escolha uma opção e pressione ENTER: ')
+    print()
     return opc
     
 
