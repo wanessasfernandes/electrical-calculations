@@ -26,7 +26,8 @@ while True:
     elif resp == 4:
         calcular_potência() 
     elif resp == 5:
-        
-        print("\n\U0001F44B Saindo do programa... Até logo!")  
+        print("\nSaindo do programa... Até logo!")  
         time.sleep(0.5) 
         break  
+    else:
+        print('\n' + '\033[1;31mERRO! Por favor, digite um número válido.\033[m' + '\n') 

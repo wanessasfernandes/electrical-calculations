@@ -66,7 +66,7 @@ def potência(p=0, i=0, v=0, r=0, esc=0):
     Calcula a potência elétrica com base nas variáveis disponíveis.
     A opção escolhida é definida pelo parâmetro 'esc'.
     """
-    print('\U0001F4D6 Aplicando a relação de potência:\n')
+    print('\U0001F4D6 Aplicando a relação de potência elétrica:\n')
     sleep(1)
 
     try:

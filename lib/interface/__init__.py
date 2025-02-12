@@ -30,7 +30,7 @@ def leiaInt(msg):
         try:
             return int(input(msg).strip())
         except ValueError:
-            print('\033[1;31mERRO! Por favor, digite um número válido.\033[m')    
+            print('\n' + '\033[1;31mERRO! Por favor, digite um número válido.\033[m' + '\n')    
 
 #Lê um número float do usuário, garantindo entrada válida
 def leiaFloat(msg):
@@ -38,7 +38,7 @@ def leiaFloat(msg):
         try:
             return float(input(msg).strip().replace(',', '.'))
         except ValueError:
-            print('\033[0;31mERRO: por favor, digite um número válido.\033[m')  
+            print('\n' + '\033[1;31mERRO! Por favor, digite um número válido.\033[m' + '\n')     
 
 #Exibe um menu de opções numeradas e retorna a escolha do usuário
 def menu(lista):
@@ -49,7 +49,9 @@ def menu(lista):
         time.sleep(0.5)  # Pequena pausa para melhor exibição
     
     print(linha() + '\n')
-    return leiaInt('\U0001F4BB Escolha uma opção e pressione ENTER: ')
+    r = leiaInt('\U0001F4BB Escolha uma opção e pressione ENTER: ')
+    print()
+    return r
 
 #Exibe uma lista de opções e retorna a escolha do usuário
 def escolha(lista):
@@ -58,4 +60,6 @@ def escolha(lista):
         time.sleep(0.5)
     
     espaçamento()
-    return leiaInt('\U0001F4BB Escolha uma opção e pressione ENTER: ')
+    r = leiaInt('\U0001F4BB Escolha uma opção e pressione ENTER: ')
+    print()
+    return r
