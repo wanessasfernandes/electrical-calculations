@@ -1,1 +1,1 @@
-U0001F4CF
+from lib.arquivo import *

@@ -6,7 +6,7 @@ import time
 while True:
     '''
     Loop principal do programa que exibe o menu e processa as escolhas do usuário
-    Exibe o menu de opções para o usuário e armazena a escolha na variável `resp`
+    Exibe o menu de opções para o usuário e armazena a escolha na variável `resp`z
     '''
     resp = menu([
         '\U0001F4CF  Resistência (R)',   
@@ -26,7 +26,7 @@ while True:
     elif resp == 4:
         calcular_potência() 
     elif resp == 5:
-        print("\nSaindo do programa... Até logo!")  
+        print('\nSaindo do programa... Até logo!\n')  
         time.sleep(0.5) 
         break  
     else:
